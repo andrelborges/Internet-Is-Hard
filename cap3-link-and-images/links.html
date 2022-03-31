@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Links</title>
+    </head>
+    <body>
+        <h1>Links</h1>
+        <p>Este exemplo e sobre links e <a href="images.html">imagens</a>.</p>
+
+        <p>Esta pagina em particular e sobre links! Temos tres tipos de link: </p>
+        <ul>
+            <li>Link Absoluto, e como <a href="misc/extras.html">Pagina Extras</a></li>
+            <li>Link Relativo</li>
+            <li>Link Raiz-Relativo</li>
+        </ul>
+
+        <p>Link absoluto e o caminho mais detalhado incluindo o esquema(protocolo cliente servidor utilizando
+         ) o domio do site e seu caminho interno <br>
+        Exemplo HTTPS://(Esquema) DEVELOPER.MOZILLA.OR(Dominio) /EN-US/DOCS/WEB/HTML(Caminho) </p>
+        <p>Link Relativo e o caminho que sub entende que o <strong>esquema</strong>  e o <strong>dominio</strong>
+        são o mesmo, precisando fornecer apenas o <em>caminho</em> 
+    exemplo "href='misc/extras.html'", lembrando que tem que colocar o caminho completo caso tenha pastas tanto acima como abaixo</p>
+
+    <p>Raiz relativo link e parecido com o link relativo porem sempre voltando para a pasta raiz do site(a camada mais acima)</p>
+
+    <p>Link Targets e utilizado para mudar o comportamento do elemento "a", 
+        exemplo por padrão os navegadores subistituem o conteudo de uma pagina pela pagina nova.
+    Quando se usa o atributo target pode abrir em uma nova guia ou janela </p>
+
+    <h3>Convenções de nomes</h3>
+    <p>Como boa pratica utilizar o nome dos arquivos e pastas em minusculo alem de não deixar
+        espaçoes em brancos nos nomes, pois não são permitidos espaços na URL, o navegador para contornar os espaços acaba adicionadno %20(codificação usada para representar espaço)   
+    utilizando hifem ao inves do espaço, sempre buscar um nome adequado para arquivos e pastas.
+    </p>
+
+    <h2>Imagens</h2>
+    <p>Imagens são recursos externos ao HTML e para utlizar precisamos informar seu caminho para que o html  
+        possa renderizar, informando o caminho podendo ser absoluto, relativo ou raiz relativo URL.
+        Utilizando a tag <code>&lt;img/&gt;</code> e o atributo <em>src</em> </p>
+    <h2>Formato de Imagens</h2>
+    <p>Tem quatro grandes padrões de imagens que são mais utilizados na web, cada um com vantagens e desvantagens.
+        <br>
+
+    </p>
+    <h3>imagem JPG</h3>
+    <p>Utilizado para uma imagem com grande paleta de cores bem como arquivo compacto, utilizado geralmente para fotos e imagens com muito gradiente na imagem</p>
+    <img src="images/mochi.jpg">
+    <img src='images/mochi.jpg' width='75' alt="Uma bola mochi em uma bolha"/>
+    <h3>GIF</h3>
+    <p>Gifs são boas opções para animações simples, porem com uma paleta de cores reduzido.</p>
+    <img src="images/mochi.gif">
+    <img src='images/mochi.gif' width='75' alt="Uma bola mochi dançando"/>
+    <h3>PNG</h3>
+    <p>PNGs são bons para tudo que não seja uma foto ou animação pois para a qualidade de fotos o PNG e JPG (pela percepição do olho humano) são iguais
+        com o fato do PNG ser um arquivo maior, sendo utilizado para icones, diagramas, logos, etc.
+    </p>
+    <img src="images/mochi.png">
+    <img src='images/mochi.png' width='75' alt="Uma bola mochi"/>
+    <h3>SVG</h3>
+    <p>SVG e baseado em vetor ou seja independente da escala utilizada ira manter a qualidade da imagem, sempre utilizar quando possivel</p>
+    <img src="images/mochi.svg">
+    <img src='images/mochi.svg' width='150' alt="Uma bola mochi com alças de Bézier"/>
+    <h2>Tamanho da Imagem</h2>
+    <p>Por padrão a tag <code>&lt;img/&gt;</code> deixa o tamanho de 150x150 pixels para JPG,GIF e PNG e SVG de 75x75pixels, porem pode ser alterado para qual tamanho desejar. Com os atributos de width e heigt, porem e recomendavel alterar as 
+    dimensões com CSS</p>
+    <h2>Texto alternativo</h2>
+    <p>Adicionando o atributo 'alt' a tag <code>&lt;img/&gt;</code> e uma boa pratica fornecendo um texto para a imagel
+    tendo um impacto tanto nos motores de busca quando no usuarios que dependem exclusivamente de texto( pessoas com deficiência visual por exemplo) </p>
+    <h2>Mais atributos em HTML</h2>
+    <p>Linguagem do documento <code>&lt;html&gt;</code> pode ser utilizado <code>&lt;html lang='en'&gt;</code> para 
+    definir o idioma da pagina</p>
+    <h2>Set de caracteres</h2>
+    <p>seria como o alfabeto digital que a pagina pode entender e renderizar de forma correta</p>
+    <p>Poderia utilizr o UTF-8 que contem o idioma turco</p>
+    <ol>
+        <li>bir</li>
+        <li>iki</li>
+        <li>üç</li>
+        <li>dört</li>
+        <li>beş</li>
+      </ol>
+      <p><code>&lt;meta charset='UTF-8'&gt;</code> e responsavel por renderizar de forma correta outros idiomas</p>
+      <h2>Caracteres Reservados</h2>
+      <p>Para utilizar os caracteres  reservados &lt; &gt; and &amp; alem de outros
+          deve se utilizar o & seguido de ponto e virgula ; e o codigo do caracter <a href="https://dev.w3.org/html5/html-author/charref">Lista de caracteres</a>
+      </p>
+      <h2>Aspas</h2>
+      <p>Aspas tambem devem ser utilizar de &ldquo&semi;
+        &rdquo&semi; &lsquo&semi; &rsquo&semi; dependendo do idioma a ser utilizado sera preciso inserir os códigos para o aspas, para que o navegador apenas renderize a aspa</p>
+      
+    </body>
+</html>
